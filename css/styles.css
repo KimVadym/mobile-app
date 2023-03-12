@@ -253,6 +253,7 @@ img {
     #06071b;
   backdrop-filter: blur(17.5px);
   border-radius: 15px;
+  width: calc((100% - 96px) / 4);
 }
 .card:not(:last-child) {
   margin-right: 32px;
@@ -280,6 +281,30 @@ img {
   margin: 14px 12px 20px 12px;
   border-radius: 10px;
 }
+/* ==================overlay================== */
+.overlay {
+  background-color: rgb(79, 162, 214, 0.6);
+  font-size: 14px;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  transform: translate(0, 100%);
+  transition: transform 500ms linear;
+  width: 100%;
+  height: 100%;
+}
+.card:hover .overlay {
+  border-radius: 15px;
+  transform: translate(0, 0);
+}
+.overlay-wrapper {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
 /* ================our costumers================== */
 .slider {
   padding-top: 80px;
