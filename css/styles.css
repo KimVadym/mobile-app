@@ -41,19 +41,25 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid #ffff00;
 }
 /* ======================header====================== */
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header-overlay {
+  width: 100%;
+  position: absolute;
   background: linear-gradient(
     90.03deg,
     rgba(0, 197, 235, 0.3) -1.97%,
     rgba(181, 68, 254, 0.3) 89.43%
   );
   backdrop-filter: blur(17.5px);
+  margin-top: 26px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
   font-weight: 400;
@@ -81,7 +87,7 @@ img {
 
 /* ============hero================== */
 .hero {
-  padding-top: 243px;
+  padding-top: 145px;
   padding-bottom: 146px;
   background-color: var(--hero);
 }
