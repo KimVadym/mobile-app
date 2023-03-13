@@ -92,8 +92,6 @@ img {
   background-color: var(--hero);
 }
 .hero-box {
-  display: flex;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -120,6 +118,7 @@ img {
 }
 .hero-text-box {
   margin-bottom: 60px;
+  position: relative;
 }
 .btn {
   font-weight: 700;
@@ -134,6 +133,20 @@ img {
 .btn:focus {
   background: var(--btn);
   color: var(--hero);
+}
+.pic-phone {
+  width: 472px;
+  height: 553px;
+  position: absolute;
+  top: 167px;
+  right: 45px;
+}
+.pic-icon {
+  width: 540px;
+  height: 418px;
+  position: absolute;
+  top: 227px;
+  left: 340px;
 }
 
 /* =================key features================== */
