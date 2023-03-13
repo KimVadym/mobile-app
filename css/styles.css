@@ -41,7 +41,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid #ffff00;
 }
 /* ======================header====================== */
 .header-overlay {
@@ -138,15 +137,30 @@ img {
   width: 472px;
   height: 553px;
   position: absolute;
-  top: 167px;
-  right: 45px;
+  top: 105px;
+  right: 135px;
+  z-index: 10;
 }
 .pic-icon {
   width: 540px;
   height: 418px;
   position: absolute;
-  top: 227px;
-  left: 340px;
+  top: 120px;
+  left: 425px;
+}
+.big-spraying {
+  width: 472px;
+  height: 553px;
+  position: absolute;
+  top: 105px;
+  right: 135px;
+}
+.small-spraying {
+  position: absolute;
+  width: 290px;
+  height: 58px;
+  top: 170px;
+  left: 150px;
 }
 
 /* =================key features================== */
