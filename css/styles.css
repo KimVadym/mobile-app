@@ -1,1 +1,53 @@
+:root {
+  --text-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
 
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.conteiner {
+  max-width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* зняти колір хедеру */
+  background-color: #06071b;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.22;
+  color: #ffffff;
+
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--text-color);
+}
