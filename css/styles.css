@@ -1,25 +1,7 @@
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul {
-  padding-left: 0;
-  margin: 0;
-}
-
-button {
-  cursor: pointer;
-}
 :root {
   --text-color: #ffffff;
-  --bg-color: #06071B;
-
+  --bg-color: #06071b;
+  --text-color-bl: #000000;
 }
 
 .list {
@@ -53,6 +35,10 @@ ul {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -60,41 +46,27 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-<<<<<<< Updated upstream
-
-.conteiner,
-.container {
-  max-width: 1280px;
-=======
 .container {
   width: 1280px;
->>>>>>> Stashed changes
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-
-
 }
-<<<<<<< Updated upstream
-
-.page-header>.conteiner {
-  background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
-  backdrop-filter: blur(17.5px);
-=======
-.page-header> .container {
-    background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
-    backdrop-filter: blur(17.5px);
->>>>>>> Stashed changes
-}
+/* ======================header========================== */
 
 .page-header {
   padding-top: 19px;
   padding-bottom: 19px;
+  background: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
+  backdrop-filter: blur(17.5px);
 }
 
 .page-nav {
-  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,7 +77,6 @@ body {
   font-size: 28px;
   line-height: 1.22;
   color: #ffffff;
-
 }
 
 .menu {
@@ -115,20 +86,111 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
-
 }
 
 .link {
-<<<<<<< Updated upstream
   color: var(--text-color);
 }
 
-/* key features */
+/* =====================hero==================== */
+.section-hero {
+  position: relative;
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 146px;
+  padding-bottom: 146px;
+  background-color: var(--bg-color);
+}
+
+.title-hero {
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.text-hero {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text-color);
+  margin-top: 18px;
+}
+
+.list-item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.list-hero {
+  margin-top: 28px;
+  margin-bottom: 60px;
+}
+
+.list-hero-item {
+  display: flex;
+  gap: 9px;
+}
+
+.list-hero-icon {
+  display: flex;
+  width: 8px;
+  height: 13px;
+}
+
+.btn {
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  border-radius: 5px;
+  width: 200px;
+  height: 42px;
+  color: var(--text-color);
+}
+
+.list-hero-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.decor-hero-detals {
+  position: absolute;
+  top: 129px;
+  left: 339px;
+  width: 541px;
+  height: 418px;
+  z-index: 2;
+  background-image: url(../images/decor.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.decor-hero-fone {
+  position: absolute;
+  top: 129px;
+  left: 766px;
+  width: 459px;
+  height: 489px;
+  z-index: 3;
+  padding: 0;
+  background-image: url(../images/mobile.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+border-radius: 5px;
+
+/* =================key features================= */
 .features {
   padding: 40px 140px 100px;
 }
 
-.titles {}
+.titles {
+}
 
 .features-title {
   font-size: 24px;
@@ -159,7 +221,7 @@ body {
 }
 
 .features-list-item::marker {
-  content: url(../images/features-icons.png) '';
+  content: url(../images/features-icons.png) "";
   /* display: inline-block; */
   /* width: 28px; */
   /* height: 28px; */
@@ -173,7 +235,6 @@ body {
   /* list-style: circle; */
   /* list-style-image: url(../images/features-icons.png);
   align-content: baseline; */
-
 }
 
 .features-list li:not(:last-child) {
@@ -190,167 +251,5 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.285;
-=======
-   color: var(--text-color);
-}
-/*--------------------- Hero ----------------------------*/
-
-.section-hero{
-  position: relative;
-  max-width: 1280px;
-  display: flex;
-  margin: 0 auto;
-  padding-top: 146px;
-  padding-bottom: 146px;
-  background-color: var(--bg-color);
-  
-}
-
-.content-hero{
-}
-
-.title-hero{
-  font-size: 40px;
-  line-height: 1.2;
-  color: var(--text-color);
-}
-
-.text-hero{
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--text-color);
-  margin-top: 18px;
-  
-}
-
-.list-item{
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--text-color);
-}
-
-.list{
-  list-style: none;
-}
-
-.list-hero{
-  margin-top: 28px;
-  margin-bottom: 60px;
- }
-
-.list-hero-item{
-  display: flex;
-  gap: 9px;
- }
-
- .list-hero-icon{
-  display: flex;
-  width: 8px;
-  height: 13px;
- }
-
-.btn{
-  background-image: linear-gradient(90.03deg,
-   #00C5EB -1.97%, #B544FE 89.43%);
-  border-radius: 5px;;
-  width: 200px;
-  height: 42px;
-  color: var(--text-color);
-}
-
-.list-hero-item:not(:last-child){
-  margin-bottom: 12px;
-}
-
-.decor-hero-detals{
-  position: absolute;
-  top: 129px;
-  left: 339px;
-  width: 541px;
-  height: 418px;
-  z-index: 2;
-
-  background-image: url(../images/decor.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
- }
-
- .decor-hero-fone{
-  position: absolute;
-  top: 129px;
-  left: 766px;
-  width: 459px;
-  height: 489px;
-  z-index: 3;
-  padding: 0;
-  
-  background-image: url(../images/mobile.png);
-  background-repeat: no-repeat;
-  background-position: left top;
- } 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ;
-  background: linear-gradient(90.03deg, 
-    #00C5EB -1.97%, #B544FE 89.43%);
-   border-radius: 5px;
->>>>>>> Stashed changes
+  color: var(--text-color-bl);
 }
